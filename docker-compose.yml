@@ -1,0 +1,10 @@
+version: '3'
+services:
+  tutorial:
+    build: 
+      context: .
+    image: tutorial
+    tty: true
+    volumes:
+      - .:/workdir
+    command: python ./main/main.py
